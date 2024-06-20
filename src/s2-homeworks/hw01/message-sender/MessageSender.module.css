@@ -7,7 +7,6 @@
 
 .textarea {
     width: 976px;
-    height: 40px;
     border: none;
     border-radius: 20px;
     background-color: rgba(245, 247, 251, 1);
@@ -15,6 +14,10 @@
     box-sizing: border-box;
     padding: 12px 24px;
     box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .button {
@@ -31,9 +34,9 @@
 }
 
 .button:hover {
-
+    font-size: 18px;
 }
 
 .button:active {
-
+    font-size: 18px;
 }

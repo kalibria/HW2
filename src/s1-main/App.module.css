@@ -1,5 +1,10 @@
 .App {
-    --header_height: 60px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    height: 60px;
 }
 
 .hw {
@@ -7,5 +12,18 @@
 }
 
 .hwTitle {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(217, 217, 217, 1);
 }

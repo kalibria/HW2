@@ -5,6 +5,7 @@ import HW1 from '../s2-homeworks/hw01/HW1'
 function App() {
     return (
         <div className={s.App}>
+            <header className={s.header}/>
             <HW1/>
             {/*раскомментировать по ходу выполнения*/}
             {/*<HW2/>*/}

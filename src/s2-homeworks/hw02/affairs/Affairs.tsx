@@ -32,6 +32,7 @@ function Affairs(props: AffairsPropsType) {
     const cnHigh = s.button + ' ' + s.high + (props.filter === 'high' ? ' ' + s.active : '')
     const cnMiddle = s.button + ' ' + s.middle + (props.filter === 'middle' ? ' ' + s.active : '')
     const cnLow = s.button + ' ' + s.low + (props.filter === 'low' ? ' ' + s.active : '')
+    const cnFilteredAffairs = s.affairs + ' ' + (props.filter === 'all' ?" " : s.filteredAffairs )
 
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair
@@ -73,7 +74,7 @@ function Affairs(props: AffairsPropsType) {
                     Low
                 </button>
             </div>
-            <div className={s.affairs}>{mappedAffairs}</div>
+            <div className={cnFilteredAffairs}>{mappedAffairs}</div>
         </div>
     )
 }

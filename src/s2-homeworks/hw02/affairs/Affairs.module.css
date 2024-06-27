@@ -53,3 +53,7 @@
     flex-wrap: wrap;
     max-width: 450px;
 }
+
+.filteredAffairs {
+    flex-direction: column;
+}

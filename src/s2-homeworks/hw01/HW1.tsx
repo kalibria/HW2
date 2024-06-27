@@ -59,23 +59,22 @@ const HW1 = () => {
             <div className={s2.container}>
                 <div className={s2.hwTitle}>Homework #1</div>
             </div>
-            <hr/>
-            <div className={s2.container}>
-                <div className={s2.hw}>
-                    {/*проверка отображения (не менять)*/}
-                    <div>
-                        <Message message={message0}/>
-                        <FriendMessage message={friendMessage0}/>
-                    </div>
+            <div className={s2.wrapper}>
+                <div className={s2.container}>
+                    <div className={s2.hw}>
+                        {/*проверка отображения (не менять)*/}
+                        <div>
+                            <Message message={message0}/>
+                            <FriendMessage message={friendMessage0}/>
+                        </div>
 
-                    {/*для автоматической проверки дз (не менять)*/}
-                    <MessageSender M={Message}/>
+                        {/*для автоматической проверки дз (не менять)*/}
+                        <MessageSender M={Message}/>
+                    </div>
                 </div>
             </div>
-            <hr/>
-
         </div>
-)
+    )
 }
 
 export default HW1

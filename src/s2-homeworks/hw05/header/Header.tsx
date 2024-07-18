@@ -8,11 +8,11 @@ import {Sidebar} from "../sidebar/Sidebar";
 
 type PropsType = {
     handleOpen: () => void
-    handleClose: () => void
+    // handleClose: () => void
     open: boolean
 }
 
-export const Header: FC<PropsType> = ({handleOpen, open, handleClose}) => {
+export const Header: FC<PropsType> = ({handleOpen, open}) => {
     // hw5-menu изначально отсутствует, при нажатии на бургер - появляется, при повторном нажатии исчезает
     const location = useLocation()
     const currentPath = location.pathname
@@ -29,7 +29,6 @@ export const Header: FC<PropsType> = ({handleOpen, open, handleClose}) => {
         <div className={s.headerWrapper}>
             <div className={s2.container}>
                 <div id={'hw5-header'} className={s.header}>
-                    {open ? <Sidebar open={open} handleClose={handleClose}/> :
                     <img
                         src={burgerIcon}
                         id={'hw5-burger-menu'}
@@ -37,7 +36,6 @@ export const Header: FC<PropsType> = ({handleOpen, open, handleClose}) => {
                         onClick={handleOpen}
                         alt={'open menu'}
                     />
-                    }
                     <h1>{pageName}</h1>
                 </div>
             </div>

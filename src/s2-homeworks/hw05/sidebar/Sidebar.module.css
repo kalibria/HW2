@@ -37,7 +37,7 @@
     margin-left: 70px;
 }
 
-.nav a {
+.link {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
@@ -51,9 +51,9 @@
     color: rgba(61, 107, 153, 1);
 }
 
-.nav a.active {
-    text-decoration: underline;
-    color: rgba(0, 89, 178, 1);
+.active {
+    text-decoration: underline ;
+    color: rgba(0, 89, 178, 1) ;
 }
 
 .close {

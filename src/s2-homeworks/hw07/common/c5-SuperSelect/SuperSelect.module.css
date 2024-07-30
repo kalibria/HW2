@@ -1,4 +1,7 @@
 .select {
+    width: 165px;
+    height: 24px;
+
 }
 
 .select:focus {
@@ -7,3 +10,5 @@
 
 .option:hover {
 }
+
+

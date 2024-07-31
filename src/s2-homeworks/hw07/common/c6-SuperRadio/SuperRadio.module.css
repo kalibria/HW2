@@ -1,30 +1,22 @@
 .radio {
-    margin-right: 11px;
-    display: none;
-
+    width: 20px;
+    height: 20px;
 }
 
 .radio::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border: solid blue;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    left: 7px;
-    top: 3px;
+
 }
 
 
 .radio:checked::before {
+
 }
 
 .label {
-    position: relative;
-    width: 100px;
-    height: auto;
+    display: flex;
+    align-items: center;
 }
+
 
 .options {
     display: flex;
@@ -35,4 +27,5 @@
 .span {
     font-weight: 400;
     font-size: 16px;
+    margin-left: 15px;
 }

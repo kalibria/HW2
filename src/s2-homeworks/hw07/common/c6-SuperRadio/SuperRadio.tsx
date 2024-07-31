@@ -25,22 +25,22 @@ type SuperRadioPropsType = Omit<DefaultRadioPropsType, 'type'> & {
 }
 
 const SuperRadio: React.FC<SuperRadioPropsType> = ({
-    id,
-    name,
-    className,
-    options,
-    value,
-    onChange,
-    onChangeOption,
-    spanProps,
-    ...restProps
-}) => {
+                                                       id,
+                                                       name,
+                                                       className,
+                                                       options,
+                                                       value,
+                                                       onChange,
+                                                       onChangeOption,
+                                                       spanProps,
+                                                       ...restProps
+                                                   }) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         // делают студенты
 
-        if(onChangeOption && e.currentTarget.checked){
-            const checkedOption = options?.find(o => o.value ===  e.currentTarget.name);
-            if(checkedOption){
+        if (onChangeOption && e.currentTarget.checked) {
+            const checkedOption = options?.find(o => o.value === e.currentTarget.name);
+            if (checkedOption) {
                 onChangeOption(checkedOption.id)
             }
         }
@@ -73,8 +73,8 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                   >
                       {o.value}
                   </span>
-              </label>
-          ))
+            </label>
+        ))
         : []
 
     return <div className={s.options}>{mappedOptions}</div>

@@ -18,9 +18,9 @@ export type OptionType = {
 
 
 const arr = [
-    {id: 1, value: 'x'},
-    {id: 2, value: 'y'},
-    {id: 3, value: 'z'},
+    {id: 1, value: 'Pre-Junior'},
+    {id: 2, value: 'Junior'},
+    {id: 3, value: 'Junior+'},
 ] // value может быть изменено
 
 const HW7 = () => {
@@ -45,7 +45,6 @@ const HW7 = () => {
                                     onChangeOption={onChangeOption}
                                 />
                             </div>
-                            <div>
                                 <SuperRadio
                                     id={'hw7-super-radio'}
                                     name={'hw7-radio'}
@@ -53,7 +52,6 @@ const HW7 = () => {
                                     value={value}
                                     onChangeOption={onChangeOption}
                                 />
-                            </div>
                         </div>
                     </div>
                 </div>

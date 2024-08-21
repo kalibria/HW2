@@ -1,3 +1,16 @@
 .loader {
     /*свг и/или анимация*/
+    width: 100px;
+    height: 100px;
+    background-image: url('/public/Loading.svg');
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start position */
+    }
+    100% {
+        transform: rotate(360deg); /* End position, full rotation */
+    }
 }

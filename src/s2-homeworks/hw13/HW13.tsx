@@ -41,7 +41,8 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.errorText + `\n` + res.data.info)
+                setText(res.data.errorText)
+                setInfo(res.data.info)
                 // дописать
 
 

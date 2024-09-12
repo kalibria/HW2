@@ -136,7 +136,7 @@ const HW13 = () => {
                                 </div>
                                 <div id={'hw13-text'} className={s.text}>
                                     {text}
-                                </div>)
+                                </div>
 
                                 <div id={'hw13-info'} className={s.info}>
                                     {info}

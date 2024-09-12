@@ -69,7 +69,6 @@ const HW13 = () => {
 
             })
             .finally(() => {
-                setInfo('')
                 setDisabled(false)
             })
     }

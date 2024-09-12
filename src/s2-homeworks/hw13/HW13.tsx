@@ -21,7 +21,6 @@ const HW13 = () => {
     const [image, setImage] = useState('')
 
     const [isDisabled, setDisabled] = useState<boolean>(false)
-    const formatedText = text.split('\n')
 
     const send = (x?: boolean | null) => () => {
 
@@ -53,15 +52,18 @@ const HW13 = () => {
                 if(e.response.status === 500){
                     setCode('Код 500!')
                     setImage(error500)
-                    setText(e.response.data.errorText + '\n' + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }else if(e.response.status === 400){
                     setCode('Код 400!')
                     setImage(error400)
-                    setText(e.response.data.errorText + '\n' + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }else {
                     setCode('Error')
                     setImage(errorUnknown)
-                    setText(e.message + '\n' +)
+                    setText(e.message)
+                    setInfo(e.name)
                 }
 
             })
@@ -132,8 +134,9 @@ const HW13 = () => {
                                 <div id={'hw13-code'} className={s.code}>
                                     {code}
                                 </div>
-                                {formatedText.map((line, index) => <div id={'hw13-text'} className={s.text}
-                                                                        key={index}>{line}</div>)}
+                                <div id={'hw13-text'} className={s.text}>
+                                    {text}
+                                </div>)
 
                                 <div id={'hw13-info'} className={s.info}>
                                     {info}

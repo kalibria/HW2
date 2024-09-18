@@ -50,7 +50,10 @@ const HW14 = () => {
 
 
     const onChangeText = (value: string) => {
-        setFind(value)
+        if(value && value !== " "){
+            setFind(value)
+        }else setFind("")
+
 
         // делает студент
         // добавить/заменить значение в квери урла

@@ -39,7 +39,7 @@ const HW14 = () => {
                 // делает студент
                 // сохранить пришедшие данные
 
-                if(res){
+                if (res) {
                     console.log(res.data.techs)
                     setTechs(res.data.techs)
                 }
@@ -47,7 +47,6 @@ const HW14 = () => {
             })
 
     }
-
 
 
     const onChangeText = (value: string) => {
@@ -81,19 +80,21 @@ const HW14 = () => {
             <div className={s2.wrapper}>
                 <div className={s2.container}>
                     <div className={s2.hw}>
-                        <SuperDebouncedInput
-                            id={'hw14-super-debounced-input'}
-                            value={find}
-                            onChangeText={onChangeText}
-                            onDebouncedChange={sendQuery}
+                        <div className={s.wrapper}>
+                            <SuperDebouncedInput
+                                id={'hw14-super-debounced-input'}
+                                value={find}
+                                onChangeText={onChangeText}
+                                onDebouncedChange={sendQuery}
 
-                        />
+                            />
 
-                        <div id={'hw14-loading'} className={s.loading}>
-                            {isLoading ? '...ищем' : <br/>}
+                            <div id={'hw14-loading'} className={s.loading}>
+                                {isLoading ? '...ищем' : <br/>}
+                            </div>
+
+                            {mappedTechs}
                         </div>
-
-                        {mappedTechs}
                     </div>
                 </div>
             </div>

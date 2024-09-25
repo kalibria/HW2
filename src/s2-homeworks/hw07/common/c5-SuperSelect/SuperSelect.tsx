@@ -4,7 +4,7 @@ import React, {
     ChangeEvent, SetStateAction, Dispatch,
 } from 'react'
 import s from './SuperSelect.module.css'
-import {type} from "node:os";
+
 
 
 
@@ -36,12 +36,13 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   {o.value}
               </option>
           ))
-        : [] // map options with key
+        : []
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        // делают студенты
-        if(onChangeOption){
+
+        if(onChangeOption && onChange){
             onChangeOption(+e.currentTarget.value)
+            onChange(e)
         }
     }
 

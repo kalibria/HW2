@@ -3,7 +3,11 @@
 }
 
 .developer {
+    width: 50vw;
+}
 
+.table {
+    width: 606px;
 }
 
 .techHeader {
@@ -11,15 +15,24 @@
 }
 
 .developerHeader {
-
+    width: 50vw;
 }
 
 .row {
     display: flex;
+    height: 48px;
+    padding-left: 17px;
+    align-items: center;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+
 }
 
 .rowHeader {
     display: flex;
+    background-color: rgba(229, 229, 229, 1);
+    height: 36px;
+    align-items: center;
+    padding-left: 17px;
 }
 
 .loading {
